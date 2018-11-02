@@ -1,20 +1,77 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
+    <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+  <!-- Top Navigation -->
+  <div class="codrops-top clearfix">
+    <!-- <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/FourBoxes/"><span>Previous Demo</span></a>
+    <span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19292"><span>Back to the Codrops Article</span></a></span> -->
+  </div>
+  <header class="codrops-header">
+    <h1>Conóceme un poco <span>Esta es sólo la primera versión, sigueme y mira mi avance.</span></h1>
+    <nav class="codrops-demos">
+    </nav>
+  </header>
+  <div class="content">
+    <h2>Mallth</h2>
+    <div class="grid">
+      <figure class="effect-hera">
+        <img src="../assets/img/yo.jpg" alt="imgyo" />
+        <figcaption>
+          <h2>Sobre <span>MI</span></h2>
+          <p>
+            <a href="../assets/curriculo/CV_Marcos_Llumiquinga.pdf" download><i class="fa fa-fw fa-file-pdf-o"></i></a>
+            <a href="https://www.instagram.com/maurodeltoro/" target="_blank"><i class="fa fa-fw fa-file-image-o"></i></a>
+            <a href="#"><i class="fa fa-fw fa-file-archive-o"></i></a>
+            <a href="https://github.com/mllumiquinga194?tab=repositories" target="_blank"><i class="fa fa-fw fa-file-code-o"></i></a>
+          </p>
+        </figcaption>
+      </figure>
+      <figure class="effect-apollo">
+        <img src="../assets/img/18.jpg" alt="img18" />
+        <figcaption>
+          <h2>Marcos <span>Llumiquinga</span></h2>
+          <p>
+            <mat-toolbar-row>
+              <span>+58-4128373552 Contactame</span>
+              <span class="example-spacer"></span>
+              <mat-icon (click)="favorite = favorite + 1" matBadgePosition="above" matBadge="{{favorite}}" class="example-icon">favorite_border</mat-icon>
+            </mat-toolbar-row>
+          </p>
+        </figcaption>
+      </figure>
+    </div>
 
+    <!-- Related demos -->
+    <section class="related">
+      <p>El motivo de desarrollar esta Web es para poner en práctica los conocimientos obtenidos. Sinceramente me
+        cuesta un poco comenzar a trabajar pero una vez puesto en marcha, no hay quien me detenga. Mi motivación es
+        explotar los conocimientos, entendí que a mis 27 años, ya no me queda el tiempo suficiente para aprender todo
+        lo que desearía por eso en este momento estoy dedicando parte de mi tiempo a aprender MEAN Stack con
+        aplicaciones sencillas pero aplicando las bases para dominar estas herramientas. Aquí puedes ver algunos
+        ejemplos de estas aplicaciones: <a href="https://musicapp-ca291.firebaseapp.com/">MusicApp</a> parecido a
+        Spotify es una aplicación donde podrás encontrar todas tus canciones favoritas, <a href="https://ingreso-egreso-app-dda46.firebaseapp.com/">Ingreso
+          y Egreso</a> es una aplicación para llevar un control de tus ingresos y saber a donde fue a parar tu dinero,
+        aquí se aplica Angular, REDUX, Firebase, entre otros.. La tipica aplicacion de <a href="https://mllumiquinga194.github.io/Todo/">Tareas
+          por Hacer</a> pero esta versión esta desarrollada bajo el patrón REDUX. Mi sala de <a href="https://marcos-chat-sockets.herokuapp.com/">chat</a>
+        favorita, desarrollada con socket.io en NODEjs. y por último, el mejor <a href="https://sockets-colas.herokuapp.com/">
+          Simulador de cola de Bancos.</a>igual desarrollada con socket.io en NODEjs, funciona perfectamente, lista
+        para poner en producción.</p>
+
+      <p><strong>Si te gusta alguna, hazmelo saber, deja tu LIKE:</strong></p>
+      <a href="https://github.com/mllumiquinga194?tab=repositories" target="_blank">
+        <img src="../assets/img/GitHub-Octocat.jpg" />
+        <h3>Mis Repositorios</h3>
+      </a>
+      <a href="https://www.linkedin.com/in/marcos-andr%C3%A9-llumiquinga-therman-053044167/" target="_blank">
+        <img src="../assets/img/dt.common.streams.StreamServer.jpg" />
+        <h3>LinkedIn</h3>
+      </a>
+    </section>
+  </div><!-- /content -->
+</div><!-- /container -->
+
+<script>
+  // For Demo purposes only (show hover effect on mobile devices)
+  [].slice.call(document.querySelectorAll('a[href="#"')).forEach(function (el) {
+    el.addEventListener('click', function (ev) { ev.preventDefault(); });
+  });
+</script>
