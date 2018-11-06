@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'material';
-  favorite = 0;
   myStyle: object = {};
   myParams: object = {};
   width: number = 100;

@@ -11,10 +11,18 @@ import { AppComponent } from './app.component';
 
 //Animations
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
+import { DescriptionComponent } from './description/description.component';
+import { ContentComponent } from './content/content.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    DescriptionComponent,
+    ContentComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
